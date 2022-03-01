@@ -1,5 +1,5 @@
 @mixin p {
-  font-family: freight-display-pro, "Times New Roman", serif;
+  font-family: freight-display-pro, Times New Roman, serif;
   font-size: 34px;
   letter-spacing: 0.4px;
   line-height: 38px;
@@ -11,4 +11,30 @@
   font-size: 10px;
   letter-spacing: 2.2px;
   text-transform: uppercase;
+}
+@mixin img_detail {
+  grid-column: 2 / 3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+  small {
+    @include small;
+  }
+  p {
+    @include p;
+  }
+}
+@mixin button {
+  padding: 15px;
+  background: none;
+  border: 1px solid $black;
+  width: max-content;
+  @include small;
+  &:hover {
+    background-color: $black;
+    color: white;
+  }
 }

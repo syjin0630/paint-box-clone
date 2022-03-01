@@ -1,0 +1,36 @@
+section {
+  &.section_1 {
+    background-color: #fbf7f6;
+  }
+  &.section_2 {
+    background-color: #f3ede9;
+  }
+  &.section_3 {
+    background-color: #dee8e9;
+  }
+  &.section_4 {
+    background-color: #f9dbbd;
+  }
+  margin-bottom: $margin-bottom;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  aspect-ratio: 2 / 1;
+  img {
+    grid-column: 1 / 2;
+    width: 100%;
+    height: 100%;
+  }
+  div {
+    @include img_detail;
+    div {
+      flex-direction: row;
+      button {
+        @include button;
+      }
+      button:not(.arrow) {
+        width: 240px;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: $margin-bottom;
+  small {
+    @include small;
+    margin-bottom: 10px;
+  }
+  p {
+    @include p;
+  }
+  .article_main {
+    display: flex;
+    flex-direction: row;
+    div {
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1em;
+      .article_product_detail {
+        width: 100%;
+        * {
+          margin-bottom: 10px;
+        }
+        .article_product-sub {
+          display: flex;
+          flex-direction: row;
+          small {
+            @include small;
+            &.new {
+              color: #cfa23e;
+            }
+          }
+        }
+        .article_product_price {
+          @include small;
+          color: #9d9d9c;
+          font-size: 10px;
+        }
+      }
+      button {
+        @include button;
+        width: 240px;
+      }
+    }
+  }
+  button {
+    @include button;
+    width: 240px;
+  }
+}
