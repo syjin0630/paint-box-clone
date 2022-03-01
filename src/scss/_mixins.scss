@@ -1,0 +1,14 @@
+@mixin p {
+  font-family: freight-display-pro, "Times New Roman", serif;
+  font-size: 34px;
+  letter-spacing: 0.4px;
+  line-height: 38px;
+}
+
+@mixin small {
+  color: black;
+  font-family: proxima-nova, Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+}
