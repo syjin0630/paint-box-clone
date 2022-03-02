@@ -1,0 +1,21 @@
+.email {
+  width: 50%;
+  div {
+    width: 100%;
+    margin-top: 80px;
+    border-bottom: 1px solid $black;
+    * {
+      &:first-child {
+        border: none;
+        width: 700px;
+        @include p;
+        text-align: start;
+      }
+      margin-bottom: 10px;
+      background: none;
+      height: 45px;
+      width: 45px;
+      font-size: 20px;
+    }
+  }
+}
